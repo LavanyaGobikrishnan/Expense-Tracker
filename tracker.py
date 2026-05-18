@@ -28,12 +28,12 @@ def view_expenses():
         print("No expenses found.")
         return
     
-    print(f"{'ID':<5} {'Date':<12} {'Category':<12} {'Description':<20} {'Amount':>10}")
+    print(f" {'Date':<12} {'Category':<12} {'Description':<20} {'Amount':>10}")
     print("-" * 65)
     
     total = 0
     for exp in expenses:
-        print(f"{exp[0]:<5} {exp[1]:<12} {exp[2]:<12} {exp[3]:<20} ₹{exp[4]:>9.2f}")
+        print(f" {exp[1]:<12} {exp[2]:<12} {exp[3]:<20} ₹{exp[4]:>9.2f}")
         total += exp[4]
     
     print("-" * 65)
